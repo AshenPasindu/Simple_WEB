@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ashen Pasindu Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-loader">
+    <div class="loader-content">
+      <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+      </div>
+      <div class="loader-text">Ashen Pasindu</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <nav class="navbar">
+      <h2 class="logo">AP</h2>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About </a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact ME">Contact</a></li>
+      </ul>
+
+      <a href="#contact" style="text-decoration: none;"><button class="hire-btn">Hire Me</button></a>
+    </nav>
+
+    <section id="home" class="hero reveal fade-bottom">
+      <div class="hero-bg">
+        <video class="home-video" playsinline autoplay muted loop>
+          <source src="homePage.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+
+          <br>
+          <!-- Wave Animation for Name (Splitt into two lines) -->
+          <h1 class="wave-text">
+            <span>A</span><span></span><span>s</span><span>h</span><span>e</span><span>n</span>
+          </h1>
+          <h1 class="wave-text second-line">
+            <span>P</span><span>a</span><span>s</span><span>i</span><span>n</span><span>d</span><span>u</span>
+          </h1>
+
+
+          <p class="description">
+            I am a university student passionate about web development,
+            UI design, and creating modern responsive websites.
+          </p>
+
+          <br>
+          <a href="#contact" class="contact-btn" style="text-decoration: none; display: inline-block;">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-container reveal fade-bottom">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="about.jpg" alt="About Me Image">
+        </div>
+        <div class="about-text">
+          <p>
+            Welcome to my portfolio! I'm a passionate university student and an aspiring Frontend Developer and Web Designer.
+            My journey into the world of web development was fueled by a curiosity for how design and technology intersect
+            to create meaningful digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services" class="services section-container reveal fade-bottom">
+      <div class="section-title">
+        <h2>My Services</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>Creating visually stunning and modern website layouts tailored to your brand identity.</p>
+        </div>
+        <div class="service-card">
+          <h3>Frontend Development</h3>
+          <p>Translating designs into clean, high-quality code using the latest technologies like React and Tailwind.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Optimization</h3>
+          <p>Improving user engagement by optimizing the overall experience and interface flow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-container reveal fade-bottom">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img-placeholder">Project One</div>
+          <div class="project-info">
+            <h4>E-commerce App</h4>
+            <p>A fully responsive online store with dynamic filtering.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-placeholder">Project Two</div>
+          <div class="project-info">
+            <h4>Task Manager</h4>
+            <p>A productivity tool to organize daily tasks and deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-container reveal fade-bottom">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-content">
+        <!-- Integrated Formspree for server-side form handling -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+
+<br><br>
+        <div class="social-links-wrapper">
+          <h3>Socials</h3>
+          <div class="socials">
+            <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/home" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
